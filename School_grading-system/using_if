@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+/**
+*a C program that schools will
+*use to automatically grade their students.
+*Using if else statement
+*/
+
+int main ()
+{
+	int score;
+
+	printf("Enter your score: \n", score);
+	scanf("%d", &score);
+	if ((score >= 80) && (score <= 100))
+	{
+		printf("Your grade is 'A'.\n");
+		if (score >= 90)
+		{
+			printf("You got a distinction! \n Keep it up !! \n");
+		}
+		else
+		printf("You got an excellent! \n Keep it up!! \n");
+	}
+
+	else if ((score >= 70) && (score <= 79))
+	printf("Your grade is 'B'.\n You can do better!");
+
+	else if ((score >= 60) && (score <= 69))
+	printf("Your grade is 'C'.\n You can do better!");
+
+        else if ((score >= 50) && (score <= 59))
+        printf("Your grade is 'D'.\n You can do better!");
+
+        else if ((score > 40) && (score <= 49))
+        printf("Your grade is 'E'.\n You can do better!");
+
+        else if ((score <= 40) && (score >= 0))
+        printf("You failed!\n");
+
+	else
+        printf("You have entered an invalid score\n");
+}
