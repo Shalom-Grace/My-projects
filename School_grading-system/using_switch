@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+/**
+*a C program that schools will
+*use to automatically grade their students.
+*Using the switch statement
+*/
+
+int main ()
+{
+	int score;
+
+	printf("Enter your score: \n", score);
+    	scanf("%d", &score);
+
+	switch(score)
+	{
+		case 80 ... 100:
+        	printf("Your grade is 'A'.\n");
+        	break;
+
+		case 70 ... 79:
+        	printf("Your grade is 'B'.\n You can do better!");
+        	break;
+
+        	case 60 ... 69:
+        	printf("Your grade is 'C'.\n You can do better!");
+        	break;
+
+        	case 50 ... 59:
+        	printf("Your grade is 'D'.\n You can do better!");
+        	break;
+
+        	case 41 ... 49:
+        	printf("Your grade is 'E'.\n You can do better!");
+        	break;
+
+        	case 0 ... 40:
+        	printf("You failed!\n");
+        	break;
+
+        	default:
+        	printf("You have entered an invalid score\n");
+	}
+}

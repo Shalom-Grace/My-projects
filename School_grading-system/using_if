@@ -3,7 +3,7 @@
 /**
 *a C program that schools will
 *use to automatically grade their students.
-*Using if else statement
+*Using if-else-if statement
 */
 
 int main ()
